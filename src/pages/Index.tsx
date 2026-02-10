@@ -3,8 +3,8 @@ import FloatingHearts from "@/components/FloatingHearts";
 import Confetti from "@/components/Confetti";
 import RunawayButton from "@/components/RunawayButton";
 
-const PUPPY_GIF = "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjF2OHRuZGN3Y2x6bGl3dXd2M2ZubGF3cXQ2Y2VpMjU2aDQ5eSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/BEob5qwFkSJ7G/giphy.gif";
-const CELEBRATE_GIF = "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXFyZ3E2a2Q0bHU3OGR6d2t1MjhmenJ1NHl6NjcwcnlhdTZoMnFhOSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/artj92V8o75VPL7AeQ/giphy.gif";
+const PUPPY_GIF = "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjQ0MWF5dXVtYjR1N2puajl6OHIxaXhtOWJ2bGt1cjZqMjVqMiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/4Zo41lhzKt6iZ8xff9/giphy.gif";
+const CELEBRATE_GIF = "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3R1bXR2aWN4ZHBhemVxNHl4MGdna290dzA1aXF2OGxmaTlmeGpmYSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/11sBLVxNs7v6WA/giphy.gif";
 
 const BG_CLASSES = [
   "bg-background",                    // default
@@ -14,8 +14,8 @@ const BG_CLASSES = [
 
 const SAD_GIFS = [
   PUPPY_GIF,
-  "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjhkNnBjZnl5Y3Z6cXRtaGZ1ZThmMGhxNDk4aXB2OHQzbGMyYyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/OPU6wzx8JrHna/giphy.gif",
-  "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdG1xaGJiOGN5NW9rZnMzcWg0ZnJlMjNqd3RjaTRwZnp2MTMxMiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/mCRJDo24UvJMA/giphy.gif",
+  "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHU4NjdmN3RiY2JyOGxzb2FpeTVmOXM2NzlhbWR5MWh5aG1haiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/tqfS3mgQU28ko/giphy.gif",
+  "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnBwMnF4Y2dpc2JiOGVnNGR5Z2xnYnRsMXQzdzF5dHU3OWg5aCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/B0vFTrb0ZGDf2/giphy.gif",
 ];
 
 const Index = () => {
