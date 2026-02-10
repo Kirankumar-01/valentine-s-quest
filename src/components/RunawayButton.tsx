@@ -23,11 +23,11 @@ const RunawayButton = ({ onAttempt }: RunawayButtonProps) => {
 
   const runAway = useCallback((e: React.TouchEvent | React.MouseEvent) => {
     e.preventDefault();
-    // Keep button within visible mobile viewport
-    const safeW = Math.min(window.innerWidth, 400);
-    const safeH = Math.min(window.innerHeight * 0.4, 300);
-    const newX = (Math.random() - 0.5) * safeW;
-    const newY = (Math.random() - 0.5) * safeH;
+    // Keep within a small area so it's always visible on mobile
+    const rangeX = 120;
+    const rangeY = 80;
+    const newX = (Math.random() - 0.5) * rangeX * 2;
+    const newY = (Math.random() - 0.5) * rangeY * 2;
 
     setPosition({ x: newX, y: newY });
     setTextIndex((prev) => (prev + 1) % NO_TEXTS.length);
