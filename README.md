@@ -62,7 +62,36 @@ This project is built with:
 
 ## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+### GitHub Pages Deployment
+
+This project is configured to deploy automatically to GitHub Pages at `https://kirankumar-01.github.io/valentine-s-quest/`
+
+#### Automatic Deployment (Recommended)
+
+1. **Enable GitHub Pages in your repository:**
+   - Go to your repository on GitHub
+   - Click on **Settings** → **Pages**
+   - Under **Source**, select **GitHub Actions**
+   - Save the settings
+
+2. **Push your code:**
+   - The GitHub Actions workflow (`.github/workflows/deploy.yml`) will automatically build and deploy your site whenever you push to the `main` branch
+   - You can also manually trigger the deployment by going to **Actions** → **Deploy to GitHub Pages** → **Run workflow**
+
+3. **Wait for deployment:**
+   - Go to the **Actions** tab to see the deployment progress
+   - Once complete, your site will be available at `https://kirankumar-01.github.io/valentine-s-quest/`
+
+#### Manual Deployment (Alternative)
+
+If you prefer to deploy manually:
+
+```sh
+npm run build
+npm run deploy
+```
+
+This will build the project and deploy it using `gh-pages`.
 
 ## Can I connect a custom domain to my Lovable project?
 
