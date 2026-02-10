@@ -3,8 +3,10 @@ import FloatingHearts from "@/components/FloatingHearts";
 import Confetti from "@/components/Confetti";
 import RunawayButton from "@/components/RunawayButton";
 
-const PUPPY_GIF = "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjQ0MWF5dXVtYjR1N2puajl6OHIxaXhtOWJ2bGt1cjZqMjVqMiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/4Zo41lhzKt6iZ8xff9/giphy.gif";
-const CELEBRATE_GIF = "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3R1bXR2aWN4ZHBhemVxNHl4MGdna290dzA1aXF2OGxmaTlmeGpmYSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/11sBLVxNs7v6WA/giphy.gif";
+// Simple, reliable drawing/clipart images for the Valentine's quest
+// Using simple illustration-style images that are reliable and look like drawings
+const PUPPY_IMAGE = "https://cdn-icons-png.flaticon.com/512/194/194279.png"; // Simple cute puppy clipart
+const CELEBRATE_IMAGE = "https://cdn-icons-png.flaticon.com/512/833/833472.png"; // Simple hearts celebration clipart
 
 const BG_CLASSES = [
   "bg-background",                    // default
@@ -12,10 +14,10 @@ const BG_CLASSES = [
   "bg-gradient-to-b from-valentine-blush to-valentine-cream", // 2nd
 ];
 
-const SAD_GIFS = [
-  PUPPY_GIF,
-  "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHU4NjdmN3RiY2JyOGxzb2FpeTVmOXM2NzlhbWR5MWh5aG1haiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/tqfS3mgQU28ko/giphy.gif",
-  "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnBwMnF4Y2dpc2JiOGVnNGR5Z2xnYnRsMXQzdzF5dHU3OWg5aCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/B0vFTrb0ZGDf2/giphy.gif",
+const SAD_IMAGES = [
+  PUPPY_IMAGE,
+  "https://cdn-icons-png.flaticon.com/512/194/194279.png", // Simple cute puppy
+  "https://cdn-icons-png.flaticon.com/512/194/194279.png", // Simple puppy with big eyes
 ];
 
 const Index = () => {
@@ -27,7 +29,7 @@ const Index = () => {
   };
 
   const currentBg = BG_CLASSES[Math.min(noAttempts, BG_CLASSES.length - 1)];
-  const currentGif = SAD_GIFS[Math.min(noAttempts, SAD_GIFS.length - 1)];
+  const currentImage = SAD_IMAGES[Math.min(noAttempts, SAD_IMAGES.length - 1)];
 
   if (accepted) {
     return (
@@ -36,7 +38,7 @@ const Index = () => {
         <FloatingHearts />
         <div className="animate-bounce-in z-10 flex flex-col items-center gap-5 text-center px-4">
           <img
-            src={CELEBRATE_GIF}
+            src={CELEBRATE_IMAGE}
             alt="Celebration!"
             className="w-56 h-56 object-cover rounded-2xl shadow-lg"
           />
@@ -69,7 +71,7 @@ const Index = () => {
       <FloatingHearts />
       <div className="z-10 flex flex-col items-center gap-5 text-center max-w-sm w-full">
         <img
-          src={currentGif}
+          src={currentImage}
           alt="Puppy eyes"
           className="w-48 h-48 object-cover rounded-2xl shadow-lg transition-all duration-500"
         />
